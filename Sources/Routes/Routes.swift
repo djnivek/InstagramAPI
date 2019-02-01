@@ -12,9 +12,11 @@ import Alamofire
 struct Instagram {
     enum User {
         case info(token: String)
+    }
+    enum Media {
         case medias(token: String, count: Int, minMediaId: String, maxMediaId: String)
     }
     enum Comment {
-        case media(id: String, token: String)
+        case comment(id: String, token: String)
     }
 }

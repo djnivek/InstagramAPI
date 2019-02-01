@@ -2,7 +2,7 @@
 //  Instagram+Comment.swift
 //  RxGramAPI-iOS
 //
-//  Created by MACHADO KEVIN on 27/01/2019.
+//  Created by MACHADO KEVIN on 01/02/2019.
 //  Copyright © 2019 Zerty Color. All rights reserved.
 //
 
@@ -10,12 +10,12 @@ import Foundation
 import Alamofire
 
 extension Instagram.Comment: Provider {
-    typealias Element = Media
+    typealias Element = Comment
     
     var path: Path {
         switch self {
-        case .media(let id, let token):
-                return "access_token=\(token)?\(id)"
+        case .comment(let id, let token):
+            return "access_token=\(token)?\(id)"
         }
     }
     var params: Parameters? {
@@ -23,7 +23,7 @@ extension Instagram.Comment: Provider {
     }
     var method: HTTPMethod {
         switch self {
-        case .media(_):
+        case .comment(_, _):
             return .get
         }
     }

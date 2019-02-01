@@ -14,8 +14,10 @@
 		4A6FD33B21FD103400D7B399 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6FD33A21FD103400D7B399 /* Routes.swift */; };
 		4A6FD33D21FD21C500D7B399 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6FD33C21FD21C500D7B399 /* Network.swift */; };
 		4A6FD34021FD21F200D7B399 /* Instagram+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6FD33F21FD21F200D7B399 /* Instagram+User.swift */; };
-		4A6FD34221FD221300D7B399 /* Instagram+Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6FD34121FD221300D7B399 /* Instagram+Comment.swift */; };
+		4A6FD34221FD221300D7B399 /* Instagram+Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6FD34121FD221300D7B399 /* Instagram+Media.swift */; };
 		4A6FD34421FD253600D7B399 /* InstaConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6FD34321FD253600D7B399 /* InstaConst.swift */; };
+		4A8996E22204FF8A00AEDCCF /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8996E12204FF8A00AEDCCF /* Comment.swift */; };
+		4A8996E42204FFAA00AEDCCF /* Instagram+Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8996E32204FFAA00AEDCCF /* Instagram+Comment.swift */; };
 		52D6D9871BEFF229002C0205 /* RxGramAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* RxGramAPI.framework */; };
 		8933C7851EB5B820000D00A4 /* RxGramAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* RxGramAPI.swift */; };
 		8933C7901EB5B82D000D00A4 /* RxGramAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* RxGramAPITests.swift */; };
@@ -40,8 +42,10 @@
 		4A6FD33A21FD103400D7B399 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		4A6FD33C21FD21C500D7B399 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		4A6FD33F21FD21F200D7B399 /* Instagram+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instagram+User.swift"; sourceTree = "<group>"; };
-		4A6FD34121FD221300D7B399 /* Instagram+Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instagram+Comment.swift"; sourceTree = "<group>"; };
+		4A6FD34121FD221300D7B399 /* Instagram+Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instagram+Media.swift"; sourceTree = "<group>"; };
 		4A6FD34321FD253600D7B399 /* InstaConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaConst.swift; sourceTree = "<group>"; };
+		4A8996E12204FF8A00AEDCCF /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		4A8996E32204FFAA00AEDCCF /* Instagram+Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instagram+Comment.swift"; sourceTree = "<group>"; };
 		52D6D97C1BEFF229002C0205 /* RxGramAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxGramAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9861BEFF229002C0205 /* RxGramAPI-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxGramAPI-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8933C7841EB5B820000D00A4 /* RxGramAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxGramAPI.swift; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 			children = (
 				4A2CACDE2204F3C7003981C1 /* User.swift */,
 				4A2CACE12204F9A7003981C1 /* Media.swift */,
+				4A8996E12204FF8A00AEDCCF /* Comment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -88,7 +93,8 @@
 			children = (
 				4A6FD33A21FD103400D7B399 /* Routes.swift */,
 				4A6FD33F21FD21F200D7B399 /* Instagram+User.swift */,
-				4A6FD34121FD221300D7B399 /* Instagram+Comment.swift */,
+				4A6FD34121FD221300D7B399 /* Instagram+Media.swift */,
+				4A8996E32204FFAA00AEDCCF /* Instagram+Comment.swift */,
 				4A6FD34321FD253600D7B399 /* InstaConst.swift */,
 			);
 			path = Routes;
@@ -365,9 +371,11 @@
 				4A6FD34421FD253600D7B399 /* InstaConst.swift in Sources */,
 				4A6FD33B21FD103400D7B399 /* Routes.swift in Sources */,
 				4A6FD33D21FD21C500D7B399 /* Network.swift in Sources */,
-				4A6FD34221FD221300D7B399 /* Instagram+Comment.swift in Sources */,
+				4A6FD34221FD221300D7B399 /* Instagram+Media.swift in Sources */,
 				4A6FD34021FD21F200D7B399 /* Instagram+User.swift in Sources */,
 				4A2CACE22204F9A7003981C1 /* Media.swift in Sources */,
+				4A8996E22204FF8A00AEDCCF /* Comment.swift in Sources */,
+				4A8996E42204FFAA00AEDCCF /* Instagram+Comment.swift in Sources */,
 				4A2CACDF2204F3C7003981C1 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

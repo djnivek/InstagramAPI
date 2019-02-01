@@ -1,5 +1,5 @@
 //
-//  Instagram+User.swift
+//  Instagram+Media.swift
 //  RxGramAPI-iOS
 //
 //  Created by MACHADO KEVIN on 27/01/2019.
@@ -9,13 +9,13 @@
 import Foundation
 import Alamofire
 
-extension Instagram.User: Provider {
-    typealias Element = User
+extension Instagram.Media: Provider {
+    typealias Element = Media
     
     var path: Path {
         switch self {
-        case .info(let token):
-            return "users/self/?access_token=\(token)"
+        case .medias(let token, let count, let minMediaId, let maxMediaId):
+            return "users/self/media/recent/?access_token=/\(token)?count=/\(count)?=min_id/\(minMediaId)?=max_id/\(maxMediaId)"
         }
     }
     var params: Parameters? {
@@ -23,7 +23,7 @@ extension Instagram.User: Provider {
     }
     var method: HTTPMethod {
         switch self {
-        case .info(_):
+        case .medias(_,_,_,_):
             return .get
         }
     }
