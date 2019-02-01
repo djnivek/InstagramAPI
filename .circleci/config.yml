@@ -1,11 +1,14 @@
+version: 2
 jobs:
-  build-and-test:
+  test:
     macos:
       xcode: "10.1.0"
     steps:
-      - run:
-          name: Run tests
-          command: fastlane scan
-          environment:
-            SCAN_DEVICE: iPhone X
-            SCAN_SCHEME: WebTests
+      - checkout
+      - run: fastlane scan
+
+workflows:
+  version: 2
+  test_release:
+    jobs:
+      - test
