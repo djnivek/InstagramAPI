@@ -1,5 +1,8 @@
 version: 2
 jobs:
+  branches:
+      only:
+        - develop
   test:
     macos:
       xcode: "10.1.0"
