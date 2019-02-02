@@ -234,7 +234,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -245,7 +245,6 @@
 				OBJ_25 /* Dependencies */,
 				OBJ_45 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -365,14 +364,14 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_45 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				"RxGramAPI::RxGramAPI" /* RxGramAPI */,
 				"Alamofire::Alamofire" /* Alamofire */,
 				"Alamofire::SwiftPMPackageDescription" /* AlamofirePackageDescription */,
-				"RxGramAPI::RxGramAPI" /* RxGramAPI */,
 				"RxGramAPI::SwiftPMPackageDescription" /* RxGramAPIPackageDescription */,
 				"RxGramAPI::RxGramAPIPackageTests::ProductTarget" /* RxGramAPIPackageTests */,
 				"RxGramAPI::RxGramAPITests" /* RxGramAPITests */,
