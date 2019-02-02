@@ -506,9 +506,9 @@
       "OBJ_45" = {
          isa = "PBXGroup";
          children = (
-            "RxGramAPI::RxGramAPITests::Product",
+            "Alamofire::Alamofire::Product",
             "RxGramAPI::RxGramAPI::Product",
-            "Alamofire::Alamofire::Product"
+            "RxGramAPI::RxGramAPITests::Product"
          );
          name = "Products";
          path = "";
@@ -1058,3 +1058,4 @@
       };
    };
    rootObject = "OBJ_1";
+}
