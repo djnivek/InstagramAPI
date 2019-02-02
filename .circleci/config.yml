@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkout
       - run: swift build
-      - run: fastlane testAPI
+      - run: swift test
 
 workflows:
   version: 2
