@@ -37,8 +37,6 @@ platform :ios do
     desc "Test the InstagramAPI"
     lane :testAPI do
       scan(
-        workspace: "RxGramAPI.xcworkspace",
-        scheme: "RxGramAPI-iOS",
         devices: ["iPhone 6s", "iPhone X"]
       )
     end
