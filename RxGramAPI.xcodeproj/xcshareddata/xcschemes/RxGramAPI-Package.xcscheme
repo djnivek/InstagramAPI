@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0900"
+   LastUpgradeVersion = "9999"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "52D6D97B1BEFF229002C0205"
+               BlueprintIdentifier = "RxGramAPI::RxGramAPI"
                BuildableName = "RxGramAPI.framework"
-               BlueprintName = "RxGramAPI-iOS"
+               BlueprintName = "RxGramAPI"
                ReferencedContainer = "container:RxGramAPI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,29 +26,19 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "52D6D9851BEFF229002C0205"
-               BuildableName = "RxGramAPI-iOS Tests.xctest"
-               BlueprintName = "RxGramAPI-iOS Tests"
+               BlueprintIdentifier = "RxGramAPI::RxGramAPITests"
+               BuildableName = "RxGramAPITests.xctest"
+               BlueprintName = "RxGramAPITests"
                ReferencedContainer = "container:RxGramAPI.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "52D6D97B1BEFF229002C0205"
-            BuildableName = "RxGramAPI.framework"
-            BlueprintName = "RxGramAPI-iOS"
-            ReferencedContainer = "container:RxGramAPI.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -65,9 +55,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "52D6D97B1BEFF229002C0205"
+            BlueprintIdentifier = "RxGramAPI::RxGramAPI"
             BuildableName = "RxGramAPI.framework"
-            BlueprintName = "RxGramAPI-iOS"
+            BlueprintName = "RxGramAPI"
             ReferencedContainer = "container:RxGramAPI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -80,15 +70,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "52D6D97B1BEFF229002C0205"
-            BuildableName = "RxGramAPI.framework"
-            BlueprintName = "RxGramAPI-iOS"
-            ReferencedContainer = "container:RxGramAPI.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
