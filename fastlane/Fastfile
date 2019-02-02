@@ -16,7 +16,7 @@
 default_platform(:ios)
 
 before_each do
-  ensure_git_status_clean
+  #ensure_git_status_clean
 end
 
 platform :ios do
@@ -37,8 +37,6 @@ platform :ios do
     desc "Test the InstagramAPI"
     lane :testAPI do
       scan(
-        workspace: "RxGramAPI.xcworkspace",
-        scheme: "RxGramAPI-iOS",
         devices: ["iPhone 6s", "iPhone X"]
       )
     end
