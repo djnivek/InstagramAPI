@@ -8,6 +8,7 @@ jobs:
       LANG: en_US.UTF-8
     steps:
       - checkout
+      - run: swift build
       - run: fastlane testAPI
 
 workflows:
