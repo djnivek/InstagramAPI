@@ -8,7 +8,7 @@ jobs:
       LANG: en_US.UTF-8
     steps:
       - checkout
-      - run: fastlane scan
+      - run: bundle exec fastlane testAPI
 
 workflows:
   version: 2
