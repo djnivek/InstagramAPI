@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12E36299913FBE7253115C53 /* Pods_RxGramAPI_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7F325892CC93ABE1CFB37F /* Pods_RxGramAPI_iOS_Tests.framework */; };
-		26A4546CCE99689C5975FC88 /* Pods_RxGramAPI_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E28B766B099CED5278FC86B /* Pods_RxGramAPI_iOS.framework */; };
 		4A2CACDF2204F3C7003981C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CACDE2204F3C7003981C1 /* User.swift */; };
 		4A2CACE22204F9A7003981C1 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CACE12204F9A7003981C1 /* Media.swift */; };
 		4A6FD33B21FD103400D7B399 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6FD33A21FD103400D7B399 /* Routes.swift */; };
@@ -34,9 +32,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D7F325892CC93ABE1CFB37F /* Pods_RxGramAPI_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxGramAPI_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		116300D55D4D5FB05DF49590 /* Pods-RxGramAPI-iOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxGramAPI-iOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxGramAPI-iOS Tests/Pods-RxGramAPI-iOS Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3E28B766B099CED5278FC86B /* Pods_RxGramAPI_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxGramAPI_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2CACDE2204F3C7003981C1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4A2CACE12204F9A7003981C1 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		4A6FD33A21FD103400D7B399 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
@@ -52,9 +47,6 @@
 		8933C7891EB5B82A000D00A4 /* RxGramAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxGramAPITests.swift; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* RxGramAPI.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RxGramAPI.plist; sourceTree = "<group>"; };
 		AD2FAA281CD0B6E100659CF4 /* RxGramAPITests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RxGramAPITests.plist; sourceTree = "<group>"; };
-		C8F46AA060E66D23BD96F822 /* Pods-RxGramAPI-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxGramAPI-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxGramAPI-iOS/Pods-RxGramAPI-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		E071D613A4A8769AF1DF6548 /* Pods-RxGramAPI-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxGramAPI-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxGramAPI-iOS/Pods-RxGramAPI-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		F2686484C0B3EA087725D8B4 /* Pods-RxGramAPI-iOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxGramAPI-iOS Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxGramAPI-iOS Tests/Pods-RxGramAPI-iOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +54,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26A4546CCE99689C5975FC88 /* Pods_RxGramAPI_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +62,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				52D6D9871BEFF229002C0205 /* RxGramAPI.framework in Frameworks */,
-				12E36299913FBE7253115C53 /* Pods_RxGramAPI_iOS_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,8 +97,6 @@
 				8933C7831EB5B7EB000D00A4 /* Tests */,
 				52D6D99C1BEFF38C002C0205 /* Configs */,
 				52D6D97D1BEFF229002C0205 /* Products */,
-				8AA22EC91F8D56944712D195 /* Pods */,
-				684604A75476D6C49A425AF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,15 +118,6 @@
 			path = Configs;
 			sourceTree = "<group>";
 		};
-		684604A75476D6C49A425AF2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3E28B766B099CED5278FC86B /* Pods_RxGramAPI_iOS.framework */,
-				0D7F325892CC93ABE1CFB37F /* Pods_RxGramAPI_iOS_Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		8933C7811EB5B7E0000D00A4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,17 +136,6 @@
 			);
 			name = Tests;
 			path = Tests/RxGramAPITests;
-			sourceTree = "<group>";
-		};
-		8AA22EC91F8D56944712D195 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C8F46AA060E66D23BD96F822 /* Pods-RxGramAPI-iOS.debug.xcconfig */,
-				E071D613A4A8769AF1DF6548 /* Pods-RxGramAPI-iOS.release.xcconfig */,
-				F2686484C0B3EA087725D8B4 /* Pods-RxGramAPI-iOS Tests.debug.xcconfig */,
-				116300D55D4D5FB05DF49590 /* Pods-RxGramAPI-iOS Tests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		DD7502721C68FC1B006590AF /* Frameworks */ = {
@@ -203,7 +171,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52D6D9901BEFF229002C0205 /* Build configuration list for PBXNativeTarget "RxGramAPI-iOS" */;
 			buildPhases = (
-				6E42FBABDEBF459774DF4BEA /* [CP] Check Pods Manifest.lock */,
 				52D6D9771BEFF229002C0205 /* Sources */,
 				52D6D9781BEFF229002C0205 /* Frameworks */,
 				52D6D9791BEFF229002C0205 /* Headers */,
@@ -222,11 +189,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52D6D9931BEFF229002C0205 /* Build configuration list for PBXNativeTarget "RxGramAPI-iOS Tests" */;
 			buildPhases = (
-				8EEB0719216318F186C3597C /* [CP] Check Pods Manifest.lock */,
 				52D6D9821BEFF229002C0205 /* Sources */,
 				52D6D9831BEFF229002C0205 /* Frameworks */,
 				52D6D9841BEFF229002C0205 /* Resources */,
-				3AB92DD606CA73A9A7A4ADFD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,75 +257,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3AB92DD606CA73A9A7A4ADFD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxGramAPI-iOS Tests/Pods-RxGramAPI-iOS Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxGramAPI-iOS Tests/Pods-RxGramAPI-iOS Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6E42FBABDEBF459774DF4BEA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxGramAPI-iOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8EEB0719216318F186C3597C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxGramAPI-iOS Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52D6D9771BEFF229002C0205 /* Sources */ = {
@@ -508,7 +404,6 @@
 		};
 		52D6D9911BEFF229002C0205 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8F46AA060E66D23BD96F822 /* Pods-RxGramAPI-iOS.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -532,7 +427,6 @@
 		};
 		52D6D9921BEFF229002C0205 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E071D613A4A8769AF1DF6548 /* Pods-RxGramAPI-iOS.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -555,7 +449,6 @@
 		};
 		52D6D9941BEFF229002C0205 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2686484C0B3EA087725D8B4 /* Pods-RxGramAPI-iOS Tests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Configs/RxGramAPITests.plist;
@@ -569,7 +462,6 @@
 		};
 		52D6D9951BEFF229002C0205 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 116300D55D4D5FB05DF49590 /* Pods-RxGramAPI-iOS Tests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Configs/RxGramAPITests.plist;
