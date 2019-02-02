@@ -1,0 +1,37 @@
+# jazzy -m RxGramAPI -x -project,RxGramAPI.xcodeproj,-scheme,RxGramAPI-Package
+
+module: InstagramAPI
+author: Kevin Machado
+author_url: https://github.com/djnivek
+github_url: https://github.com/djnivek/InstagramAPI
+
+output: Docs/swift
+
+exclude:
+  - "**/*-ObjC.swift"
+  - "**/*Deprecations.swift"
+
+clean: true
+skip_undocumented: true
+
+theme: apple
+
+custom_categories:
+    - name: RxGramAPI
+      children:
+      - RxGramAPI
+
+    - name: Models
+      children:
+      - User
+      - Media
+      - Comment
+
+    - name: Routes
+      children:
+      - Instagram
+      - Routes
+
+    - name: Network
+      children:
+      - Provider
