@@ -11,7 +11,7 @@ import Foundation
 class GramAPI {
     
     func getUser(completion: @escaping (User) -> Void) {
-        Instagram.User.info(token: "fs").request(completion: completion)
+        Twitter.User.info(token: "fs").request(completion: completion)
     }
     
 }

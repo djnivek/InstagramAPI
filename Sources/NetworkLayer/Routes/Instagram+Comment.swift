@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-extension Instagram.Comment: Provider {
+extension Twitter.Comment: Provider {
     typealias Element = Comment
     
     var path: Path {

@@ -34,7 +34,7 @@ platform :ios do
     )
   end
 
-    desc "Test the InstagramAPI"
+    desc "Test the TwitterAPI"
     lane :testAPI do
       scan(
         devices: ["iPhone 6s", "iPhone X"]

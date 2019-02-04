@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Instagram {
+extension Twitter {
     struct Info {
         static var baseURL = URL(string: "https://api.instagram.com/v1/")!
     }

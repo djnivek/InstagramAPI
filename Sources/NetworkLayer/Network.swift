@@ -20,7 +20,7 @@ protocol Provider {
 
 extension Provider where Element: Decodable {
     @discardableResult func request(completion: @escaping (Element) -> Void) -> DataRequest {
-        let request = Alamofire.request(Instagram.Info.baseURL.appendingPathComponent(path),
+        let request = Alamofire.request(Twitter.Info.baseURL.appendingPathComponent(path),
                           method: method,
                           parameters: params,
                           encoding: JSONEncoding.default,

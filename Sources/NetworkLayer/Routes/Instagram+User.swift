@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-extension Instagram.User: Provider {
+extension Twitter.User: Provider {
     typealias Element = User
     
     var path: Path {

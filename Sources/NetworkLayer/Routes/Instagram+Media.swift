@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-extension Instagram.Media: Provider {
+extension Twitter.Media: Provider {
     typealias Element = Media
     
     var path: Path {

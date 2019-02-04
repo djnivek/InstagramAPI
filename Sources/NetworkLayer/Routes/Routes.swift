@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-struct Instagram {
+struct Twitter {
     enum User {
         case info(token: String)
     }
