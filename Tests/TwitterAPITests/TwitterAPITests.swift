@@ -1,5 +1,5 @@
 //
-//  RxGramAPITests.swift
+//  TwitterAPITests.swift
 //  Zerty Color
 //
 //  Created by Kevin Machado on 25/01/2019.
@@ -8,9 +8,9 @@
 
 import Foundation
 import XCTest
-import RxGramAPI
+import TwitterAPI
 
-class RxGramAPITests: XCTestCase {
+class TwitterAPITests: XCTestCase {
     func testAlwaysSuccess() {
          XCTAssert(true)
     }

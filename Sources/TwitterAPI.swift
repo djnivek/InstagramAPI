@@ -1,5 +1,5 @@
 //
-//  RxGramAPI.swift
+//  TwitterAPI.swift
 //  Zerty Color
 //
 //  Created by Kevin Machado on 25/01/2019.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class GramAPI {
+class TwitterAPI {
     
     func getUser(completion: @escaping (User) -> Void) {
         Twitter.User.info(token: "fs").request(completion: completion)
