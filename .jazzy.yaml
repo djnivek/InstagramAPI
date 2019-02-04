@@ -1,4 +1,4 @@
-# jazzy -m RxGramAPI -x -project,RxGramAPI.xcodeproj,-scheme,RxGramAPI-Package
+# jazzy -m TwitterAPI -x -project,TwitterAPI.xcodeproj,-scheme,TwitterAPI-Package
 
 module: TwitterAPI
 author: Kevin Machado
