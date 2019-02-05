@@ -16,7 +16,7 @@
 default_platform(:ios)
 
 before_each do
-  ensure_git_status_clean
+#ensure_git_status_clean
 end
 
 platform :ios do
@@ -26,7 +26,7 @@ platform :ios do
     version = options[:version_number]
     increment_version_number(
       version_number: version,
-      xcodeproj: "RxGramAPI.xcodeproj"
+      xcodeproj: "TwitterAPI.xcodeproj"
     )
     git_commit(
       path: ".",
@@ -34,7 +34,7 @@ platform :ios do
     )
   end
 
-    desc "Test the InstagramAPI"
+    desc "Test the TwitterAPI"
     lane :testAPI do
       scan(
         devices: ["iPhone 6s", "iPhone X"]

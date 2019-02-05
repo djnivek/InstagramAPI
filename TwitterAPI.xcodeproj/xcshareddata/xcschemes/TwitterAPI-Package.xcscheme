@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "RxGramAPI::RxGramAPI"
-               BuildableName = "RxGramAPI.framework"
-               BlueprintName = "RxGramAPI"
-               ReferencedContainer = "container:RxGramAPI.xcodeproj">
+               BlueprintIdentifier = "TwitterAPI::TwitterAPI"
+               BuildableName = "TwitterAPI.framework"
+               BlueprintName = "TwitterAPI"
+               ReferencedContainer = "container:TwitterAPI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "RxGramAPI::RxGramAPITests"
-               BuildableName = "RxGramAPITests.xctest"
-               BlueprintName = "RxGramAPITests"
-               ReferencedContainer = "container:RxGramAPI.xcodeproj">
+               BlueprintIdentifier = "TwitterAPI::TwitterAPITests"
+               BuildableName = "TwitterAPITests.xctest"
+               BlueprintName = "TwitterAPITests"
+               ReferencedContainer = "container:TwitterAPI.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,10 +55,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "RxGramAPI::RxGramAPI"
-            BuildableName = "RxGramAPI.framework"
-            BlueprintName = "RxGramAPI"
-            ReferencedContainer = "container:RxGramAPI.xcodeproj">
+            BlueprintIdentifier = "TwitterAPI::TwitterAPI"
+            BuildableName = "TwitterAPI.framework"
+            BlueprintName = "TwitterAPI"
+            ReferencedContainer = "container:TwitterAPI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>

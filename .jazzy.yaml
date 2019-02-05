@@ -1,9 +1,9 @@
-# jazzy -m RxGramAPI -x -project,RxGramAPI.xcodeproj,-scheme,RxGramAPI-Package
+# jazzy -m TwitterAPI -x -project,TwitterAPI.xcodeproj,-scheme,TwitterAPI-Package
 
-module: InstagramAPI
+module: TwitterAPI
 author: Kevin Machado
 author_url: https://github.com/djnivek
-github_url: https://github.com/djnivek/InstagramAPI
+github_url: https://github.com/djnivek/TwitterAPI
 
 output: Docs/swift
 
@@ -16,22 +16,22 @@ skip_undocumented: true
 
 theme: apple
 
-custom_categories:
-    - name: RxGramAPI
-      children:
-      - RxGramAPI
-
-    - name: Models
-      children:
-      - User
-      - Media
-      - Comment
-
-    - name: Routes
-      children:
-      - Instagram
-      - Routes
-
-    - name: Network
-      children:
-      - Provider
+# custom_categories:
+#     - name: TwitterAPI
+#       children:
+#       - TwitterAPI
+#
+#     - name: Models
+#       children:
+#       - User
+#       - Media
+#       - Comment
+#
+#     - name: Routes
+#       children:
+#       - Instagram
+#       - Routes
+#
+#     - name: Network
+#       children:
+#       - Provider

@@ -25,7 +25,7 @@ Bump the version to the given one
 ```
 fastlane ios testAPI
 ```
-Test the InstagramAPI
+Test the TwitterAPI
 
 ----
 

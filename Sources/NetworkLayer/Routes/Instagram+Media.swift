@@ -1,6 +1,6 @@
 //
 //  Instagram+Media.swift
-//  RxGramAPI-iOS
+//  TwitterAPI-iOS
 //
 //  Created by MACHADO KEVIN on 27/01/2019.
 //  Copyright © 2019 Zerty Color. All rights reserved.
@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-extension Instagram.Media: Provider {
+extension Twitter.Media: Provider {
     typealias Element = Media
     
     var path: Path {
