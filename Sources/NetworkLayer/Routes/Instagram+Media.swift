@@ -9,23 +9,23 @@
 import Foundation
 import Alamofire
 
-extension Twitter.Media: Provider {
-    typealias Element = Media
-    
-    var path: Path {
-        switch self {
-        case .medias(let token, let count, let minMediaId, let maxMediaId):
-            return "users/self/media/recent/?access_token=/\(token)?count=/\(count)?=min_id/\(minMediaId)?=max_id/\(maxMediaId)"
-        }
-    }
-    var params: Parameters? {
-        return nil
-    }
-    var method: HTTPMethod {
-        switch self {
-        case .medias(_,_,_,_):
-            return .get
-        }
-    }
-    
-}
+//extension Twitter.Media: Provider {
+//    typealias Element = Media
+//    
+//    var path: Path {
+//        switch self {
+//        case .medias(let token, let count, let minMediaId, let maxMediaId):
+//            return "users/self/media/recent/?access_token=/\(token)?count=/\(count)?=min_id/\(minMediaId)?=max_id/\(maxMediaId)"
+//        }
+//    }
+//    var params: Parameters? {
+//        return nil
+//    }
+//    var method: HTTPMethod {
+//        switch self {
+//        case .medias(_,_,_,_):
+//            return .get
+//        }
+//    }
+//    
+//}

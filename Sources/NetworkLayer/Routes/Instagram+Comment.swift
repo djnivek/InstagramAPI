@@ -9,23 +9,23 @@
 import Foundation
 import Alamofire
 
-extension Twitter.Comment: Provider {
-    typealias Element = Comment
-    
-    var path: Path {
-        switch self {
-        case .comment(let id, let token):
-            return "access_token=\(token)?\(id)"
-        }
-    }
-    var params: Parameters? {
-        return nil
-    }
-    var method: HTTPMethod {
-        switch self {
-        case .comment(_, _):
-            return .get
-        }
-    }
-    
-}
+//extension Twitter.Comment: Provider {
+//    typealias Element = Comment
+//    
+//    var path: Path {
+//        switch self {
+//        case .comment(let id, let token):
+//            return "access_token=\(token)?\(id)"
+//        }
+//    }
+//    var params: Parameters? {
+//        return nil
+//    }
+//    var method: HTTPMethod {
+//        switch self {
+//        case .comment(_, _):
+//            return .get
+//        }
+//    }
+//    
+//}
