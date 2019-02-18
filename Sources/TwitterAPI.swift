@@ -10,8 +10,13 @@ import Foundation
 
 class TwitterAPI {
     
-    func getUser(completion: @escaping (User) -> Void) {
-        Twitter.User.info(token: "fs").request(completion: completion)
+    func getUserTimeline(from screenname: String, completion: @escaping ([Tweet]) -> Void) {
+        Twitter.Statuses.userTimeline(screenName: screenname, userID: nil)
+            .request(completion: completion)
     }
     
+    func getUserTimeline(by userId: String, completion: @escaping ([Tweet]) -> Void) {
+        Twitter.Statuses.userTimeline(screenName: nil, userID: userId)
+            .request(completion: completion)
+    }
 }

@@ -10,8 +10,10 @@ import Foundation
 import Alamofire
 
 struct Twitter {
-    enum User {
-        case info(token: String)
+    enum Statuses {
+        case homeTimeline
+        case userTimeline(screenName: String?, userID: String?)
+        case mentionTimeline
     }
     enum Media {
         case medias(token: String, count: Int, minMediaId: String, maxMediaId: String)

@@ -60,7 +60,7 @@
 		OBJ_89 /* InstaConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* InstaConst.swift */; };
 		OBJ_90 /* Instagram+Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Instagram+Comment.swift */; };
 		OBJ_91 /* Instagram+Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Instagram+Media.swift */; };
-		OBJ_92 /* Instagram+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Instagram+User.swift */; };
+		OBJ_92 /* Instagram+Statuses.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Instagram+Statuses.swift */; };
 		OBJ_93 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Routes.swift */; };
 		OBJ_94 /* TwitterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* TwitterAPI.swift */; };
 		OBJ_96 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
@@ -116,7 +116,7 @@
 		OBJ_15 /* InstaConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaConst.swift; sourceTree = "<group>"; };
 		OBJ_16 /* Instagram+Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instagram+Comment.swift"; sourceTree = "<group>"; };
 		OBJ_17 /* Instagram+Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instagram+Media.swift"; sourceTree = "<group>"; };
-		OBJ_18 /* Instagram+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instagram+User.swift"; sourceTree = "<group>"; };
+		OBJ_18 /* Instagram+Statuses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instagram+Statuses.swift"; sourceTree = "<group>"; };
 		OBJ_19 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		OBJ_20 /* TwitterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAPI.swift; sourceTree = "<group>"; };
 		OBJ_23 /* TwitterAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAPITests.swift; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 				OBJ_15 /* InstaConst.swift */,
 				OBJ_16 /* Instagram+Comment.swift */,
 				OBJ_17 /* Instagram+Media.swift */,
-				OBJ_18 /* Instagram+User.swift */,
+				OBJ_18 /* Instagram+Statuses.swift */,
 				OBJ_19 /* Routes.swift */,
 			);
 			path = Routes;
@@ -483,7 +483,7 @@
 				4AA01DF02218721B00706294 /* UserMention.swift in Sources */,
 				OBJ_90 /* Instagram+Comment.swift in Sources */,
 				OBJ_91 /* Instagram+Media.swift in Sources */,
-				OBJ_92 /* Instagram+User.swift in Sources */,
+				OBJ_92 /* Instagram+Statuses.swift in Sources */,
 				4AD4B1352209C7CC001051AA /* Coordinate.swift in Sources */,
 				4AD4B13B2209C81E001051AA /* Entities.swift in Sources */,
 				OBJ_93 /* Routes.swift in Sources */,
