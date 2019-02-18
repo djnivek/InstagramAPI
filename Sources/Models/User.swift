@@ -142,7 +142,7 @@ public class User: Decodable {
         followersCount = "followers_count",
         friendsCount = "friends_count",
         listedCount = "listed_count",
-        favoritesCount = "favorites_count",
+        favoritesCount = "favourites_count",
         statusesCount = "statuses_count",
         createdAt = "created_at",
         geoEnabled = "geo_enabled",
@@ -160,5 +160,87 @@ public class User: Decodable {
         defaultProfileImage = "default_profile_image"
         
         case name, location, url, description, protected, verified, lang
+    }
+    
+    public init(id: String, name: String, screenName: String, location: String?, url: String?, description: String?, protected: Bool, verified: Bool, followersCount: Int, friendsCount: Int, listedCount: Int, favoritesCount: Int, statusesCount: Int, createdAt: Date, geoEnabled: Bool, lang: String, profileBackgroundColor: String, profileBackgroundImageUrl: URL, profileBackgroundImageUrlHttps: URL, profileBackgroundTile: Bool, profileBannerUrl: URL, profileImageUrl: URL, profileImageUrlHttps: URL, profileLinkColor: String, profileTextColor: String, profileUseBackgroundImage: Bool, defaultProfile: Bool, defaultProfileImage: Bool) {
+        self.id = id
+        self.name = name
+        self.screenName = screenName
+        self.location = location
+        self.url = url
+        self.description = description
+        self.protected = protected
+        self.verified = verified
+        self.followersCount = followersCount
+        self.friendsCount = friendsCount
+        self.listedCount = listedCount
+        self.favoritesCount = favoritesCount
+        self.statusesCount = statusesCount
+        self.createdAt = createdAt
+        self.geoEnabled = geoEnabled
+        self.lang = lang
+        self.profileBackgroundColor = profileBackgroundColor
+        self.profileBackgroundImageUrl = profileBackgroundImageUrl
+        self.profileBackgroundImageUrlHttps = profileBackgroundImageUrlHttps
+        self.profileBackgroundTile = profileBackgroundTile
+        self.profileBannerUrl = profileBannerUrl
+        self.profileImageUrl = profileImageUrl
+        self.profileImageUrlHttps = profileImageUrlHttps
+        self.profileLinkColor = profileLinkColor
+        self.profileTextColor = profileTextColor
+        self.profileUseBackgroundImage = profileUseBackgroundImage
+        self.defaultProfile = defaultProfile
+        self.defaultProfileImage = defaultProfileImage
+    }
+    
+    required public convenience init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: UserKeys.self)
+        
+        let createdAtString = try container.decode(String.self, forKey: .createdAt)
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEE MMM dd HH:mm:ss Z yyyy"
+        let createdAt = dateFormatter.date(from: createdAtString)!
+        
+        let id = try container.decode(String.self, forKey: .id)
+        let name = try container.decode(String.self, forKey: .name)
+        let screenName = try container.decode(String.self, forKey: .screenName)
+        let location = try container.decodeIfPresent(String.self, forKey: .location)
+        let url = try container.decodeIfPresent(String.self, forKey: .url)
+        let description = try container.decodeIfPresent(String.self, forKey: .description)
+        let protected = try container.decode(Bool.self, forKey: .protected)
+        let verified = try container.decode(Bool.self, forKey: .verified)
+        let followersCount = try container.decode(Int.self, forKey: .followersCount)
+        let friendsCount = try container.decode(Int.self, forKey: .friendsCount)
+        let listedCount = try container.decode(Int.self, forKey: .listedCount)
+        let favoritesCount = try container.decode(Int.self, forKey: .favoritesCount)
+        let statusesCount = try container.decode(Int.self, forKey: .statusesCount)
+        
+        let geoEnabled = try container.decode(Bool.self, forKey: .geoEnabled)
+        let lang = try container.decode(String.self, forKey: .lang)
+        let profileBackgroundColor = try container.decode(String.self, forKey: .profileBackgroundColor)
+        
+        let profileBackgroundImageUrl = try container.decode(URL.self, forKey: .profileBackgroundImageUrl)
+        let profileBackgroundImageUrlHttps = try container.decode(URL.self, forKey: .profileBackgroundImageUrlHttps)
+        let profileBackgroundTile = try container.decode(Bool.self, forKey: .profileBackgroundTile)
+        let profileBannerUrl = try container.decode(URL.self, forKey: .profileBannerUrl)
+        let profileImageUrl = try container.decode(URL.self, forKey: .profileImageUrl)
+        let profileImageUrlHttps = try container.decode(URL.self, forKey: .profileImageUrlHttps)
+        
+        let profileLinkColor = try container.decode(String.self, forKey: .profileLinkColor)
+        let profileTextColor = try container.decode(String.self, forKey: .profileTextColor)
+        
+        let profileUseBackgroundImage = try container.decode(Bool.self, forKey: .profileUseBackgroundImage)
+        let defaultProfile = try container.decode(Bool.self, forKey: .defaultProfile)
+        let defaultProfileImage = try container.decode(Bool.self, forKey: .defaultProfileImage)
+        
+        self.init(id: id, name: name, screenName: screenName, location: location, url: url, description: description,
+                  protected: protected, verified: verified, followersCount: followersCount, friendsCount: friendsCount,
+                  listedCount: listedCount, favoritesCount: favoritesCount, statusesCount: statusesCount,
+                  createdAt: createdAt, geoEnabled: geoEnabled, lang: lang, profileBackgroundColor: profileBackgroundColor,
+                  profileBackgroundImageUrl: profileBackgroundImageUrl, profileBackgroundImageUrlHttps: profileBackgroundImageUrlHttps,
+                  profileBackgroundTile: profileBackgroundTile, profileBannerUrl: profileBannerUrl, profileImageUrl: profileImageUrl,
+                  profileImageUrlHttps: profileImageUrlHttps, profileLinkColor: profileLinkColor, profileTextColor: profileTextColor,
+                  profileUseBackgroundImage: profileUseBackgroundImage, defaultProfile: defaultProfile,
+                  defaultProfileImage: defaultProfileImage)
     }
 }

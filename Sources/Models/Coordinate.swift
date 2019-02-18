@@ -26,7 +26,21 @@ public struct Coordinate: Decodable {
     /// This will be "Point" for `Tweet` coordinates fields
     public let type: String
     
-    enum Coordinate: String, CodingKey {
+    enum CoordinateKeys: String, CodingKey {
         case coordinates, type
+    }
+
+    public init(coordinates: [Float], type: String) {
+        self.coordinates = coordinates
+        self.type = type
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CoordinateKeys.self)
+        
+        let coordinates = try container.decode([Float].self, forKey: .coordinates)
+        let type = try container.decode(String.self, forKey: .type)
+        
+        self.init(coordinates: coordinates, type: type)
     }
 }

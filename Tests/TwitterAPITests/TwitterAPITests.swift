@@ -12,11 +12,10 @@ import TwitterAPI
 
 class TwitterAPITests: XCTestCase {
     
+    static var allTests = [("testAlwaysSuccess", testAlwaysSuccess)]
+    
     func testAlwaysSuccess() {
          XCTAssert(true)
     }
     
-    static var allTests = [
-        ("testAlwaysSuccess", testAlwaysSuccess),
-    ]
 }

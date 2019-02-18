@@ -25,8 +25,22 @@ public struct Hashtag: Decodable {
     /// Name of the hashtag, without the "#"
     public let text: String
     
-    enum SymbolKeys: String, CodingKey {
+    enum HashtagKeys: String, CodingKey {
         case indices, text
+    }
+    
+    public init(indices: [Int], text: String) {
+        self.indices = indices
+        self.text = text
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: HashtagKeys.self)
+        
+        let indices = try container.decode([Int].self, forKey: .indices)
+        let text = try container.decode(String.self, forKey: .text)
+        
+        self.init(indices: indices, text: text)
     }
     
 }

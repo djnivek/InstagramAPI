@@ -38,4 +38,23 @@ public struct URLObject: Decodable {
         expandedUrl = "expanded_url"
         case indices, url
     }
+    
+    public init(displayUrl: URL, expandedUrl: URL, url: URL, indices: [Int]) {
+        self.displayUrl = displayUrl
+        self.expandedUrl = expandedUrl
+        self.indices = indices
+        self.url = url
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: URLObjectKeys.self)
+        
+        let displayUrl = try container.decode(URL.self, forKey: .displayUrl)
+        let url = try container.decode(URL.self, forKey: .url)
+        let expandedUrl = try container.decode(URL.self, forKey: .expandedUrl)
+        let indices = try container.decode([Int].self, forKey: .indices)
+        
+        self.init(displayUrl: displayUrl, expandedUrl: expandedUrl, url: url, indices: indices)
+    }
+    
 }

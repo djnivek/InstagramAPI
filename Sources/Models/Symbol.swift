@@ -31,4 +31,18 @@ public struct Symbol: Decodable {
         case indices, text
     }
     
+    public init(indices: [Int], text: String) {
+        self.indices = indices
+        self.text = text
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: SymbolKeys.self)
+        
+        let indices = try container.decode([Int].self, forKey: .indices)
+        let text = try container.decode(String.self, forKey: .text)
+        
+        self.init(indices: indices, text: text)
+    }
+    
 }

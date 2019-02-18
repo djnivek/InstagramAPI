@@ -38,4 +38,22 @@ public struct UserMention: Decodable {
         screenName = "screen_name"
         case indices, name
     }
+    
+    public init(id: String, indices: [Int], name: String, screenName: String) {
+        self.id = id
+        self.indices = indices
+        self.name = name
+        self.screenName = screenName
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: UserMentionKeys.self)
+        
+        let id = try container.decode(String.self, forKey: .id)
+        let indices = try container.decode([Int].self, forKey: .indices)
+        let name = try container.decode(String.self, forKey: .name)
+        let screenName = try container.decode(String.self, forKey: .screenName)
+        
+        self.init(id: id, indices: indices, name: name, screenName: screenName)
+    }
 }
