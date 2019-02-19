@@ -1,0 +1,110 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/kmachado/Documents/Perso/TwitterAPI/Sources/Models/BoundingBox.swift",
+      "line": 10,
+      "symbol": "Coordinates",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmachado/Documents/Perso/TwitterAPI/Sources/Models/BoundingBox.swift",
+      "line": 15,
+      "symbol": "BoundingBox.collection",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmachado/Documents/Perso/TwitterAPI/Sources/Models/BoundingBox.swift",
+      "line": 21,
+      "symbol": "BoundingBox.init(collection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmachado/Documents/Perso/TwitterAPI/Sources/Models/Coordinate.swift",
+      "line": 33,
+      "symbol": "Coordinate.init(coordinates:type:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmachado/Documents/Perso/TwitterAPI/Sources/Models/Entities.swift",
+      "line": 28,
+      "symbol": "Entities.init(hashtags:medias:urls:userMentions:symbols:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmachado/Documents/Perso/TwitterAPI/Sources/Models/Hashtag.swift",
+      "line": 32,
+      "symbol": "Hashtag.init(indices:text:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmachado/Documents/Perso/TwitterAPI/Sources/Models/Media.swift",
+      "line": 72,
+      "symbol": "Media.MediaType.photo",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmachado/Documents/Perso/TwitterAPI/Sources/Models/Media.swift",
+      "line": 72,
+      "symbol": "Media.MediaType.video",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmachado/Documents/Perso/TwitterAPI/Sources/Models/Media.swift",
+      "line": 73,
+      "symbol": "Media.MediaType.animatedGif",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmachado/Documents/Perso/TwitterAPI/Sources/Models/Place.swift",
+      "line": 10,
+      "symbol": "Place",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmachado/Documents/Perso/TwitterAPI/Sources/Models/Symbol.swift",
+      "line": 34,
+      "symbol": "Symbol.init(indices:text:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmachado/Documents/Perso/TwitterAPI/Sources/Models/Tweet.swift",
+      "line": 108,
+      "symbol": "Tweet.init(createdAt:id:text:source:truncated:inReplyToStatusId:inReplyToUserId:inReplyToScreenName:user:coordinates:place:quotedStatusId:isQuoteStatus:quotedStatus:retweetedStatus:favoriteCount:entities:extendedEntities:favorited:retweeted:possiblySensitive:lang:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmachado/Documents/Perso/TwitterAPI/Sources/Models/URLObject.swift",
+      "line": 42,
+      "symbol": "URLObject.init(displayUrl:expandedUrl:url:indices:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmachado/Documents/Perso/TwitterAPI/Sources/Models/User.swift",
+      "line": 165,
+      "symbol": "User.init(id:name:screenName:location:url:description:protected:verified:followersCount:friendsCount:listedCount:favoritesCount:statusesCount:createdAt:geoEnabled:lang:profileBackgroundColor:profileBackgroundImageUrl:profileBackgroundImageUrlHttps:profileBackgroundTile:profileBannerUrl:profileImageUrl:profileImageUrlHttps:profileLinkColor:profileTextColor:profileUseBackgroundImage:defaultProfile:defaultProfileImage:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmachado/Documents/Perso/TwitterAPI/Sources/Models/UserMention.swift",
+      "line": 42,
+      "symbol": "UserMention.init(id:indices:name:screenName:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/kmachado/Documents/Perso/TwitterAPI"
+}

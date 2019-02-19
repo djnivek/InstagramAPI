@@ -5,7 +5,7 @@ author: Kevin Machado
 author_url: https://github.com/djnivek
 github_url: https://github.com/djnivek/TwitterAPI
 
-output: Docs/swift
+output: docs/
 
 exclude:
   - "**/*-ObjC.swift"
